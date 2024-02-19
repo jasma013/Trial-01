@@ -9,11 +9,13 @@ noun3=input("Choose a noun:")
 print("----------------------------------------------")
 print("I am very greatful to have",noun,'in my life')
 print(p_noun,"is someone whom I trust the most because",noun,'is my',noun2)
-
 print(p_noun,'is very', adjective, )
-
 print('Sometimes i feel like i dont deserve to be',p_noun,noun2,'but....')
-
 print('Well...lets keep it to that much for today.')
-
 print('------------------------------------------')
+print("Hello world")
+print("I love programing")
+print (" I am as cool as my ")
+
+
+    
