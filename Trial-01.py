@@ -13,9 +13,7 @@ print(p_noun,'is very', adjective, )
 print('Sometimes i feel like i dont deserve to be',p_noun,noun2,'but....')
 print('Well...lets keep it to that much for today.')
 print('------------------------------------------')
-print("Hello world")
-print("I love programing")
-print (" I am as cool as my ")
+
 
 
     
