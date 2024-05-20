@@ -1,0 +1,66 @@
+#Initializing empty list 
+students_list= []
+students_dict= {}
+#Function to add student information
+def add_student ():
+    name=input("Enter the student's name :")
+    age=int(input("Enter the student's age:"))
+    grade= input("Enter student's grade:")
+    students_list.append(name)
+    students_dict[name]= {'age':age, 'grade':grade}
+    print(" Student's information added successfully.")
+ #Function to search for a student
+def search_student():
+    name= input("Enter the students name to search:")
+    if name in students_dict():
+        print(f" Student's name:{name}")
+        print(f"Age: {students_dict[name]['age']}")
+        print(f"Grade:{students_dict[name]['grade']}")
+    else:
+        print("Sorry, student not found.")
+#Function to remove a student
+def remove_student():
+    name= input("Enter the student's name to remove:")
+    if name in students_list:
+        students_list.remove(name)
+        del students_dict[name]
+        print("Student removed successfully")
+    else:
+        print (" student not found.")
+#Main programme loop
+while True:
+    print("\nStudent Information Management System")
+    print("1.Add student")
+    print("2.Search student")
+    print("3. Remove Student")
+    print("4. View All Students")
+    print("5. Exit")
+    choice = input("Enter your choice (1-5): ")
+    if choice == '1':
+        add_student()
+    elif choice == '2':
+        search_student()
+    elif choice == '3':
+        remove_student()
+    elif choice == '4':
+        print("\nStudent Details:")
+        for name, details in students_dict.items():
+            print(f"Name: {name}, Age: {details['age']}, Grade: {details['grade']}")
+    elif choice == '5':
+        print("Exiting the program.")
+        break
+    else:
+        print("Invalid choice. Please enter a number")   
+
+
+
+
+
+
+
+
+
+
+            
+
+    
